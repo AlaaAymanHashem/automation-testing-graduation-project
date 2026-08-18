@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
-<suite name="OrangeHRM Automation Suite" verbose="1">
+<suite name="OrangeHRM Automation Suite"
+       verbose="1"
+       parallel="tests"
+       thread-count="2">
 
     <test name="Login Tests">
         <classes>
             <class name="Tests.LoginTests"/>
         </classes>
     </test>
+
+    <test name="PIM Tests">
+        <classes>
+            <class name="Tests.PIMTests"/>
+        </classes>
+    </test>
+
 
 </suite>
