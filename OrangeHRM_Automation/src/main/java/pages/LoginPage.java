@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.ConfigReader;
 
 import java.time.Duration;
 import java.util.List;
@@ -46,7 +47,7 @@ public class LoginPage {
      */
 
     public List<String> getRequiredMessages(){
-        List<WebElement> elements = new WebDriverWait(driver, Duration.ofSeconds(10))
+        List<WebElement> elements = new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getExplicitWait()))
                 .until(ExpectedConditions.numberOfElementsToBeMoreThan(REQUIRED_MESSAGES, 0));
 
         return elements.stream()
@@ -55,7 +56,7 @@ public class LoginPage {
     }
 
     private WebElement waitFor(By locator) {
-        return new WebDriverWait(driver, Duration.ofSeconds(10))
+        return new WebDriverWait(driver, Duration.ofSeconds(ConfigReader.getExplicitWait()))
                 .until(d ->
                 {
                     WebElement element = d.findElement(locator);

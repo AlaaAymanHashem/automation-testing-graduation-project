@@ -10,5 +10,11 @@
   "loginWithEmptyFields": {
     "username": "",
     "password": ""
+  },
+  "searchForAnEmployee": {
+    "employeeName": "Peter Mac"
+  },
+  "SearchForNonExistingEmployee": {
+    "employeeName": "Alaa"
   }
 }
