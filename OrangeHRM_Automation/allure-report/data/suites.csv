@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","2344","testValidLogin","OrangeHRM Automation Suite","2026-08-18","passed","2026-08-18","Tests.LoginTests","Login Tests","Tests.LoginTests","testValidLogin"
+"","566","testLoginWithEmptyFields","OrangeHRM Automation Suite","2026-08-18","passed","2026-08-18","Tests.LoginTests","Login Tests","Tests.LoginTests","testLoginWithEmptyFields"
+"","5101","testInvalidLogin","OrangeHRM Automation Suite","2026-08-18","passed","2026-08-18","Tests.LoginTests","Login Tests","Tests.LoginTests","testInvalidLogin"

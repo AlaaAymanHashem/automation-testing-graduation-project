@@ -1,0 +1,14 @@
+{
+  "validLogin": {
+    "username": "Admin",
+    "password": "admin123"
+  },
+  "invalidLogin": {
+    "username": "standard",
+    "password": "123456"
+  },
+  "loginWithEmptyFields": {
+    "username": "",
+    "password": ""
+  }
+}
